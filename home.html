@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <input type="hidden" id="author" value="@usuario1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Inspirado no X</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar (Menu Lateral) -->
+    <div class="sidebar">
+      <div class="logo">Meu Logo</div>
+      <ul class="menu">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Explorar</a></li>
+        <li><a href="#">Notificações</a></li>
+        <li><a href="#">Mensagens</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Estudos</a></li>
+      </ul>
+    </div>
+
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+        <div class="post-box">
+            <textarea placeholder="O que está acontecendo?"></textarea>
+            <input type="file" id="file-input" accept="image/*, .pdf, .doc, .docx" multiple>
+            <button>Postar</button>
+          </div>
+
+      <!-- Feed de Postagens -->
+      <div class="feed">
+        <div class="post">
+          <div class="post-author">@usuario1</div>
+          <div class="post-text">Esta é uma postagem de exemplo!</div>
+          <div class="post-actions">
+            <button>Curtir</button>
+            <button>Comentar</button>
+            <button>Compartilhar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="sidebar">
+        <div class="post-box">
+          <textarea placeholder="Buscar"></textarea>
+        </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
