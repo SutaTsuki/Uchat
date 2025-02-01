@@ -28,10 +28,10 @@
   }
  
   .sidebar {
+    transition: all 0.5s ease-in-out;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #000000;
     color: #fff;
     padding: 20px;
     width: 259px;
@@ -165,20 +165,10 @@
   border-radius: 0px;
 }
 
-.panel {
-  position: fixed;
-  top: 0;
-  left: -300px; /* Inicia fora da tela */
-  width: 300px;
-  height: 100vh;
-  background-color: #fff;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  transition: left 0.5s ease-in-out;
-  padding: 20px;
-  box-sizing: border-box;
-}
+
 .search-input {
-  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  margin-left: 1px solid #fff;
 }
 
 .active  {
@@ -189,4 +179,13 @@
   height: 100vh;
   background-color: #000000;
   transition: all 0.5s ease-in-out;
+  position: absolute;
+}
+li button {
+  background-color: #000000;
+  border-color: #000000;
+  color: #fff;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  border: 1px solid #000000;
 }
