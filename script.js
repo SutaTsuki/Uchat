@@ -30,14 +30,16 @@ document.querySelector('.post-box button').addEventListener('click', function ()
   
       // Adiciona o texto da postagem
       newPost.innerHTML = `
-        <div class="post-author">@novousuario</div>
-        <div class="post-text">${postText}</div>
-        <div class="post-media"></div>
-        <div class="post-actions">
-          <button>Curtir</button>
-          <button>Comentar</button>
-          <button>Compartilhar</button>
-        </div>
+      
+          <div class="post-author">@novousuario</div>
+          <div class="post-text">${postText}</div>
+          <div class="post-media"></div>
+          <div class="post-actions">
+            <button>Curtir</button>
+            <button>Comentar</button>
+            <button>Compartilhar</button>
+          </div>
+         
       `;
   
       // Adiciona as mídias (imagens/documentos)
