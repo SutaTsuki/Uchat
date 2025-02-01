@@ -1,7 +1,7 @@
 // Exemplo de funcionalidade para adicionar uma postagem
 document.addEventListener('keypress', function(event) {
   if (event.key === 'Enter') {
-    const postText = document.querySelector('.post-box input').value;
+   const postText = document.querySelector('.post-box input').value;
     if (postText.trim() !== '') {
       const feed = document.querySelector('.feed');
       const newPost = document.createElement('div');
@@ -92,14 +92,10 @@ document.querySelector('.post-box button').addEventListener('click', function ()
       // Limpa o campo de texto e o input de arquivo
       document.querySelector('.post-box textarea').value = '';
       fileInput.value = '';
-    }
+    } 
   });
-  document.getElementById('explorar-button').addEventListener('click', function() {
-    const searchInput = document.getElementById('search-input');
-    searchInput.classList.toggle('active'); // Alterna a classe 'active'
-  });
-  
-  const explorarButton = document.getElementById('explorar-button');
-    if(explorarButton.click === true) {
-      searchInput.classList.toggle('active');
-    }
+
+  function activeExplorer() {
+    var element = document.getElementById("container2");
+    element.classList.toggle("active");
+  }
