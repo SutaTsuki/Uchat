@@ -28,10 +28,10 @@
   }
  
   .sidebar {
+    transition: all 0.5s ease-in-out;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #000000;
     color: #fff;
     padding: 20px;
     width: 259px;
@@ -47,6 +47,7 @@
   .menu li {
     list-style: none;
     margin: 15px 0;
+    cursor: pointer;
   }
   
   .menu a {
@@ -153,20 +154,8 @@
     border-radius: 24px;
 }
 
-#search-button {
-    background-color: #4285f4;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 24px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 10px;
-}
 
-#search-button:hover {
-    background-color: #357abd;
-}
+
 .container2 #search-input {
   border: none;
   outline: none;
@@ -174,4 +163,72 @@
   padding: 10px;
   font-size: 12px;
   border-radius: 0px;
+}
+
+
+.search-input {
+  background-color: transparent;
+  margin-left: 1px solid #fff;
+}
+
+.active  {
+  width: 540px;
+  position: absolute;
+  left: 810px;
+  top: 1px;
+  height: 100vh;
+  background-color: #000000;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+}
+li button {
+  background-color: #000000;
+  border-color: #000000;
+  color: #fff;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  border: 1px solid #000000;
+}
+
+
+
+
+.post-box .box-text{
+  display: inline-block;
+  border-radius: 10px;
+}
+.post-box {
+  background-color: #000000;
+  border-radius: 50px;
+  margin-top: 20px;
+  position: sticky; 
+}
+
+#explorer-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 24px;
+}
+.container2 #explorer-input {
+border: none;
+outline: none;
+flex: 1;
+padding: 10px;
+font-size: 12px;
+border-radius: 0px;
+}
+.explorer-container {
+  display: inline-flex;
+  border: 1px solid #fff;
+  padding: 8px;
+  border-radius: 30px;
+}
+.explorer-container input {
+  background-color: #000000;
+}
+#explorer-button {
+  background-color: #000000;
 }

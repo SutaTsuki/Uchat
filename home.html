@@ -14,12 +14,12 @@
     <div class="sidebar">
       <div class="logo">Meu Logo</div>
       <ul class="menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Explorar</a></li>
-        <li><a href="#">Notificações</a></li>
-        <li><a href="#">Mensagens</a></li>
-        <li><a href="#">Perfil</a></li>
+        <li><a href="home.html">Início</a></li>
+        <li><a href="#"><button onclick="activeExplorer()">Explorar</button></a></li>
         <li><a href="#">Estudos</a></li>
+        <li><a href="#">Mensagens</a></li>
+        <li><a href="#">Notificações</a></li>
+        <li><a href="#">Perfil</a></li>
       </ul>
     </div>
 
@@ -48,20 +48,18 @@
         
       </div>
     </div>
-    <div class="container2">
-      <div class="sidebar">
-        <div class="post-box">
-          <div class="search-container">
-            <input type="text" id="search-input" placeholder="Pesquisar...">
-            <button id="search-button"></button>
-        </div>
-        </div>
+    <div class="search-input" id="search-input"> 
+      <div id="container2">
+        <div class="sidebar">
+          <div class="post-box">
+            <div class="explorer-container">
+      <input type="text" id="explorer-input" placeholder="Pesquisar...">
+      <button id="explorer-button">🔍</button>
+          </div>
+      </div>
     </div>
-  </div>
-
-
-
-  </div>
+    </div>
+    </div>
 
 </div>
   <script src="script.js"></script>
