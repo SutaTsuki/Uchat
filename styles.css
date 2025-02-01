@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   body {
@@ -50,15 +51,15 @@
     border-right: 1px solid rgb(255, 255, 255);
   }
   
-  .post-box textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  .post-box .box-text{
+    display: inline-block;
+    
+    border-radius: 10px;
   }
-  
+  .post-box {
+    background-color: #fff;
+    border-radius: 50px;
+  }
   .post-box button {
     background-color: #1da1f2;
     color: #fff;
@@ -114,3 +115,45 @@
     margin-top: 5px;
   }
  
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 10px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+#search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 24px;
+}
+
+#search-button {
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#search-button:hover {
+    background-color: #357abd;
+}
+.container2 #search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 0px;
+}

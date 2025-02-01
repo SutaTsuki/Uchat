@@ -1,6 +1,6 @@
 // Exemplo de funcionalidade para adicionar uma postagem
 document.querySelector('.post-box button').addEventListener('click', function () {
-    const postText = document.querySelector('.post-box textarea').value;
+    const postText = document.querySelector('.post-box input').value;
     if (postText.trim() !== '') {
       const feed = document.querySelector('.feed');
       const newPost = document.createElement('div');
@@ -15,11 +15,11 @@ document.querySelector('.post-box button').addEventListener('click', function ()
         </div>
       `;
       feed.prepend(newPost);
-      document.querySelector('.post-box textarea').value = ''; // Limpa o campo de texto
+      document.querySelector('.post-box input').value = ''; // Limpa o campo de texto
     }
   });
-  document.querySelector('.post-box button').addEventListener('click', function () {
-    const postText = document.querySelector('.post-box textarea').value;
+  document.querySelector('post-button').addEventListener('click', function () {
+    const postText = document.querySelector('#post-box textarea').value;
     const fileInput = document.querySelector('#file-input');
     const files = fileInput.files;
   

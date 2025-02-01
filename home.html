@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site Inspirado no X</title>
+  <title>Uchat</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,9 +27,10 @@
     <!-- Conteúdo Principal -->
     <div class="main-content">
         <div class="post-box">
-            <textarea placeholder="O que está acontecendo?"></textarea>
-            <input type="file" id="file-input" accept="image/*, .pdf, .doc, .docx" multiple>
-            <button>Postar</button>
+          <div class="search-container" id="post-box textarea">
+            <input type="text" id="search-input" placeholder="Oque esta acontecendo?">
+            <button id="post-button">Postar</button>
+        </div>
           </div>
 
       <!-- Feed de Postagens -->
@@ -48,7 +49,10 @@
     <div class="container2">
       <div class="sidebar">
         <div class="post-box">
-          <textarea placeholder="Buscar"></textarea>
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button id="search-button"></button>
+        </div>
         </div>
     </div>
   </div>
