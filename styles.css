@@ -189,3 +189,46 @@ li button {
   font-size: 16px;
   border: 1px solid #000000;
 }
+
+
+
+
+.post-box .box-text{
+  display: inline-block;
+  border-radius: 10px;
+}
+.post-box {
+  background-color: #000000;
+  border-radius: 50px;
+  margin-top: 20px;
+  position: sticky; 
+}
+
+#explorer-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 24px;
+}
+.container2 #explorer-input {
+border: none;
+outline: none;
+flex: 1;
+padding: 10px;
+font-size: 12px;
+border-radius: 0px;
+}
+.explorer-container {
+  display: inline-flex;
+  border: 1px solid #fff;
+  padding: 8px;
+  border-radius: 30px;
+}
+.explorer-container input {
+  background-color: #000000;
+}
+#explorer-button {
+  background-color: #000000;
+}
