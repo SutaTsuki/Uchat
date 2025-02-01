@@ -47,6 +47,7 @@
   .menu li {
     list-style: none;
     margin: 15px 0;
+    cursor: pointer;
   }
   
   .menu a {
@@ -153,20 +154,8 @@
     border-radius: 24px;
 }
 
-#search-button {
-    background-color: #4285f4;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 24px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 10px;
-}
 
-#search-button:hover {
-    background-color: #357abd;
-}
+
 .container2 #search-input {
   border: none;
   outline: none;
@@ -174,4 +163,30 @@
   padding: 10px;
   font-size: 12px;
   border-radius: 0px;
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Inicia fora da tela */
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.5s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#search-input {
+  transition: all 0.5s ease-in-out;
+}
+
+#search-input.active  {
+  width: 540px;
+  position: absolute;
+  left: 810px;
+  top: 1px;
+  height: 100vh;
+  background-color: #000000;
+  transition: all 0.5s ease-in-out;
 }

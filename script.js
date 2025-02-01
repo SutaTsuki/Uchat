@@ -1,4 +1,25 @@
 // Exemplo de funcionalidade para adicionar uma postagem
+document.addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    const postText = document.querySelector('.post-box input').value;
+    if (postText.trim() !== '') {
+      const feed = document.querySelector('.feed');
+      const newPost = document.createElement('div');
+      newPost.classList.add('post');
+      newPost.innerHTML = `
+        <div class="post-author">@novousuario</div>
+        <div class="post-text">${postText}</div>
+        <div class="post-actions">
+          <button>Curtir</button>
+          <button>Comentar</button>
+          <button>Compartilhar</button>
+        </div>
+      `;
+      feed.prepend(newPost);
+      document.querySelector('.post-box input').value = ''; // Limpa o campo de texto
+    }
+  }
+});
 document.querySelector('.post-box button').addEventListener('click', function () {
     const postText = document.querySelector('.post-box input').value;
     if (postText.trim() !== '') {
@@ -73,3 +94,12 @@ document.querySelector('.post-box button').addEventListener('click', function ()
       fileInput.value = '';
     }
   });
+  document.getElementById('explorar-button').addEventListener('click', function() {
+    const searchInput = document.getElementById('search-input');
+    searchInput.classList.toggle('active'); // Alterna a classe 'active'
+  });
+  
+  const explorarButton = document.getElementById('explorar-button');
+    if(explorarButton.click === true) {
+      searchInput.classList.toggle('active');
+    }
